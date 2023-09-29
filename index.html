@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo4.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    
+    <section id="home" class="home">
+      <div class="navMain" id="navMain">
+        <div class="logo"><img src="logo4.jpeg" alt="LOGO" /></div>
+        <ul id="menuList">
+          <li class="navItems"><a href="#home">Home</a></li>
+          <li class="navItems"><a href="#about">About</a></li>
+          <li class="navItems"><a href="#experience">Experience</a></li>
+          <li class="navItems"><a href="#academics">Academics</a></li>
+          <li class="navItems button" id="buttonNav">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="menuBar" id="menuBar" onclick="hamburger()">
+          <span class="stLine"></span>
+          <span class="stLine"></span>
+          <span class="stLine"></span>
+        </div>
+      </div>
+      <header class="homeCon">
+        <div class="outer">
+          <div class="inner">
+            <img src="photo.jpg" alt="MAIN" />
+          </div>
+        </div>
+        <div class="content">
+          <h1>HI</h1>
+          <h2>I am ANKIT MOHAPATRA</h2>
+          <p>Welcome to the world of <b>COMPUTER SCIENCE AND ENGINEERING</b></p>
+        </div>
+      </header>
+    </section>
+    <section id="about" class="about">
+      <div class="aboutHead">
+        <div class="aboutP" id="aboutP"><p>A Glance</p></div>
+      </div>
+      <div class="border">
+        <div class="aboutContent" id="aboutContent">
+          <h1>About Me</h1>
+          <span class="line"></span>
+          <h4>A brief info</h4>
+          <p>
+            More intrest in web devlopment,graphics designing and UI/UX
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="academics" class="academics">
+      <div class="border">
+        <div class="acaHead">
+          <p>The temples of</p>
+          <h1><b>Academics</b></h1>
+          <span class="line"></span>
+        </div>
+        <div class="box">
+          <div class="col">
+            <div class="row">
+              <div class="img">
+                <img src="logo1.png" alt="VSSUT" />
+              </div>
+              <div class="acaContent">
+                <h3>Veer Surendra Sai University of Technology</h3>
+                <h4>B Tech (Computer Science and Engineering)</h4>
+                <p>2022-26</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="img">
+                <img src="logo2.png" alt="UNC" />
+              </div>
+              <div class="acaContent">
+                <h3>UPENDRA NATH H S SCHOOL,SORO</h3>
+                <h4>Intermediate of Science (CHSE Odisha)</h4>
+                <p>2018-20</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="img">
+                <img src="logo3.jpeg" alt="MBNHS" />
+              </div>
+              <div class="acaContent">
+                <h3>SARASWATI SISHU BIDYA MANDIR,MITRAPUR</h3>
+                <h4>Matriculation (BSE Odisha)</h4>
+                <p>2017-18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="conHead">
+        <p class="diffP" id="diffP">
+          Your Suggestions for the improvement of this website are heartily
+          Welcome!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Present Address :</h3>
+          <span class="line"></span>
+          <p>Agastya Hall of Residence</p>
+          <p>Burla, 768018</p>
+        </div>
+        <div class="col">
+          <h3>Contact Info :</h3>
+          <span class="line"></span>
+          <a href="tel: +917205889176"
+            ><i class="fa fa-phone"></i>
+            <p>72058 89176</p></a
+          >
+          <a href="mailto: ankitmohatra966@gmail.com"
+            ><i class="fa fa-envelope"></i>
+            <p> ankitmohatra966@gmail.com</p>
+          </a>
+          
+        </div>
+        <div class="col">
+          <h3>Social Links :</h3>
+          <span class="line"></span>
+          <div class="mediaIcons">
+            <a href="https://www.linkedin.com/in/ankit-mohapatra-848ab0284/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            
+            <a href="https://www.instagram.com/ankitmohapatra_9/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com/@ankitmohapatra635?si=bmqOpl60bSbTMpWN"
+              ><i class="fa fa-youtube"></i
+            ></a>
+            <a href="https://t.me/@ankit_mohapatra966"
+              ><i class="fa fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight">
+        <p>CopyRight ©️ <a href="https://github.com/ankitmohapatra966">ankit_mohapatra966</a></p>
+      </div>
+    </section>
+    <section class="addOns">
+      <div class="button topArrow" id="moveToTop" onclick="moveToTop()">
+        <i class="fa fa-arrow-up"></i>
+      </div>
+      <div class="button" id="theme" onclick="theme()">
+        <i class="fa fa-paint-brush"></i>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("mouseup", function (event) {
+        var btn = document.getElementById("menuBar");
+        var BG = document.getElementById("navMain");
+        if (event.target != btn && event.target.parentNode != btn) {
+          btn.classList.remove("openMenuIcon");
+          BG.classList.remove("openMenu");
+        }
+      });
+      function hamburger() {
+        document.getElementById("navMain").classList.toggle("openMenu");
+        document.getElementById("menuBar").classList.toggle("openMenuIcon");
+      }
+      function theme() {
+        document.getElementById("buttonNav").classList.toggle("oceanBTN");
+        document.getElementById("theme").classList.toggle("oceanBTN");
+        document.getElementById("moveToTop").classList.toggle("oceanBTN");
+        document.getElementById("menuBar").classList.toggle("oceanBTN");
+        document.getElementById("home").classList.toggle("ocean");
+        document.getElementById("aboutP").classList.toggle("ocean");
+        document.getElementById("aboutContent").classList.toggle("ocean");
+        document.getElementById("experience").classList.toggle("ocean");
+        document.getElementById("contact").classList.toggle("ocean");
+        document.getElementById("diffP").classList.toggle("oceanContent");
+        document.body.classList.toggle("oceanBG");
+      }
+      function moveToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      window.addEventListener("scroll", function () {
+        var topArrow = document.getElementById("moveToTop");
+        topArrow.classList.toggle("scrolled", window.scrollY > 0);
+      });
+  
+    </script>
+  </body>
+</html>
